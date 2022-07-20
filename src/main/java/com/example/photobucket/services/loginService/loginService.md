@@ -14,7 +14,7 @@ The service must belong to package `com.example.photobucket.services.loginServic
 - `bool userLoggedIn(String username)`: Returns whether the user specified with username is currently logged in. 
 - `void logoutUser(String username)`: If user is already logged in, log user out, else throw an exception.
 - `void generateToken(String username)`: Generate a verification token for the user to reset password (example: can be a randomly generate six digit number).
-- `bool changePassword(String username, String token)`: Change the password of an existing user if a change password token has been requested and the token provided by the user matches the generated token.
+- `bool changePassword(String username, String token, String newPassword)`: Change the password of an existing user to the new password if a change password token has been requested and the token provided by the user matches the generated token.
   
 ## Exceptions
 All methods above must throw exceptions as reasonable. It is upto developer discretion to create Exceptions for invalid operations. Exceptions must be placed in package `com.example.photobucket.exceptions`.
