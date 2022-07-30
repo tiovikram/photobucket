@@ -138,7 +138,6 @@ public class LoginService {
         return false;
     }
 
-
     /**
      * A User of the Login Service
      */
