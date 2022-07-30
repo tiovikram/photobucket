@@ -1,25 +1,18 @@
-package com.example.photobucket;
+package com.example.photobucket.services.loginService;
 
-import com.example.photobucket.services.loginService.LoginService;
+import com.example.photobucket.Exceptions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Tests for the LoginService class
  */
-@SpringBootTest
-class PhotobucketApplicationTests {
+class LoginServiceTests {
 
 	private LoginService loginService;
-
-	/**
-	 * Tests if the application is able to load the Spring context
-	 */
-	@Test
-	void contextLoads() {
-	}
 
 	/**
 	 * Tests initiating a new LoginService instance
@@ -120,7 +113,7 @@ class PhotobucketApplicationTests {
 	}
 
 	/**
-	 * Tests userLoggedIn() returns false when the user is not logged-in
+     * Tests userLoggedIn() returns false when the user is not logged-in
 	 */
 	@Test
 	public void testUserLoggedInCorrectReturnsFalse() {
@@ -130,7 +123,7 @@ class PhotobucketApplicationTests {
 	}
 
 	/**
-	 * Tests a UserDoesNotExist exception is thrown when logging out
+     * Tests a UserDoesNotExist exception is thrown when logging out
 	 * a user that does not exist
 	 */
 	@Test
@@ -140,7 +133,7 @@ class PhotobucketApplicationTests {
 	}
 
 	/**
-	 * Tests logOut() successfully logs-out an existing user
+     * Tests logOut() successfully logs-out an existing user
 	 */
 	@Test
 	public void testLogOutUserCorrect() {
@@ -152,7 +145,7 @@ class PhotobucketApplicationTests {
 	}
 
 	/**
-	 * Tests an UserDoesNotExist exception is thrown when changing the
+     * Tests an UserDoesNotExist exception is thrown when changing the
 	 * password of a user that does not exist
 	 */
 	@Test
@@ -164,7 +157,7 @@ class PhotobucketApplicationTests {
 	}
 
 	/**
-	 * Tests an IllegalChangePasswordToken is thrown when changing the
+     * Tests an IllegalChangePasswordToken is thrown when changing the
 	 * password with an incorrect (non-6-digit) token
 	 */
 	@Test
