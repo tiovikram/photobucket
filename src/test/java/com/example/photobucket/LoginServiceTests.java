@@ -1,6 +1,6 @@
-package com.example.photobucket.services.loginService;
+package com.example.photobucket;
 
-import com.example.photobucket.Exceptions;
+import com.example.photobucket.services.loginService.LoginService;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -10,6 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * Tests for the LoginService class
  */
+@SpringBootTest
 class LoginServiceTests {
 
 	private LoginService loginService;
